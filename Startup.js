@@ -38,7 +38,7 @@ function startAI()
 //Listen for user input
 document.addEventListener('keydown', event => {
     //Right arrow key moves piece right
-    if(event.keyCode === 37 && !ai.aiPlaying)
+    if(event.keyCode === 65 && !ai.aiPlaying)
     {
         currPiece.col--;
         if(board.overlap(currPiece))
@@ -47,7 +47,7 @@ document.addEventListener('keydown', event => {
         }
     }
     //Left arrow key moves piece left
-    else if(event.keyCode === 39 && !ai.aiPlaying)
+    else if(event.keyCode === 68 && !ai.aiPlaying)
     {
         currPiece.col++;
         if(board.overlap(currPiece))
@@ -56,7 +56,7 @@ document.addEventListener('keydown', event => {
         }
     }
     //Up arrow key rotates piece clockwise
-    else if(event.keyCode === 38 && !ai.aiPlaying)
+    else if(event.keyCode === 87 && !ai.aiPlaying)
     {
         currPiece.rotate("cw");
         if(board.overlap(currPiece))
@@ -65,7 +65,7 @@ document.addEventListener('keydown', event => {
         }
     }
     //Down arrow key rotates piece counter clockwise
-    else if(event.keyCode === 40 && !ai.aiPlaying) 
+    else if(event.keyCode === 83 && !ai.aiPlaying) 
     {
         currPiece.rotate("ccw");
         if(board.overlap(currPiece))

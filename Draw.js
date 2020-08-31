@@ -8,8 +8,8 @@ canvas.style.marginRight = "auto";
 canvas.parentElement.style.textAlign = "center";
 
 //Set canvas size to take full height of window and half width of window
-ctx.canvas.height = window.innerHeight - 20;
-ctx.canvas.width = window.innerWidth / 4 * 3 - 20;
+ctx.canvas.height = window.innerHeight * 3 / 4;
+ctx.canvas.width = window.innerWidth /2;
 
 var lineW = 6;
 
@@ -43,7 +43,6 @@ var gridW = gameW - 2 * lineW;
 var gridH = gameH - 2 * lineW;
 var rowH = gridH / 20;
 var colW = gridW / 10;
-
 
 //Draw the game and canvas in a loop
 function drawLoop()
