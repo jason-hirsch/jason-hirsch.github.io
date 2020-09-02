@@ -32,7 +32,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-block d-lg-none">Jason Hirsch</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -44,6 +44,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#achievements">Achievements</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                     
                 </ul>
             </div>
@@ -60,7 +61,13 @@
                     <div class="subheading mb-5">
                         <a href="mailto:name@email.com">jasonhi10@aol.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">
+                        I am a hard working individual and I am
+                        always excited to learn more about computer
+                        science. I work well with others on
+                        collaborative projects and bring creative ideas
+                        to the table.
+                    </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/jason-t-hirsch/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/pythonpotatostuff" target="_blank"><i class="fab fa-github"></i></a>
@@ -83,8 +90,20 @@
 
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Tetris and AI to Play Tetris</h3>
-                        <div>Computer Science - Web Development Track</div>
-                        <p>GPA: 3.23</p>
+                        <div>I programmed tetris in javascript using a html canvas.</div>
+                        <div>For the AI, I used a depth-first search transversal of the game board to test all possible moves,</div>
+                        <div>and weighed certain parameters which consitute a "good" move to decide which move is best.</div>
+                        <div>The parameters I used were summed height, full rows, empty tiles with a non-empty tile above them, and height variance</div>
+                        <div>By using a hash set I was able to more than quadruple the performance of the AI compared to a brute-forced depth-first search.</div>
+                        <div>Additionally, by not starting the depth-first search until the moving piece reached a non-empty row, I improved the speed of the algorithm two-fold.</div>
+                        <br>
+                        <p style="text-align:left;padding-left:40%;">W : Rotate Clockwise</p>
+                        <p style="text-align:left;padding-left:40%;">A : Move Left</p>
+                        <p style="text-align:left;padding-left:40%;">S : Rotate Counterclockwise</p>
+                        <p style="text-align:left;padding-left:40%;">D : Move Right</p>
+                        <p style="text-align:left;padding-left:40%;">+ : Double Game Speed</p>
+                        <p style="text-align:left;padding-left:40%;">- : Halve Game Speed</p>
+                        <p>"Play" and "Watch AI Play" buttons are below the board</p>
                     </div>
 
                     <canvas id="gameCanvas">
@@ -98,8 +117,6 @@
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
 
                     <script src="AI.js"></script>
                     <script src="Draw.js"></script>
@@ -109,22 +126,17 @@
                     <script>
                         run();
                     </script>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">DLL Injector</h3>
+                        <div>
+                            Programmed a DLL (dynamic-link library) injector and designed/implemented a UI
+                            using QT to make it user-friendly. The UI has many confort features for users such as
+                            saving their settings, supporting 64bit and 32bit target executables, and providing an
+                            easy interface to customize the injection method.
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <img src="./assets/img/mainUI.png" alt="MainDllUI">
+                        <img src="./assets/img/processUI.png" alt="ProcessDllUI">
                     </div>
                 </div>
             </section>
@@ -165,11 +177,21 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">Undergraduate Research Assistant</h3>
+                            <div class="subheading mb-3">University of North Texas</div>
+                            <p>
+                                The connected autonomous vehicle research involved using neural
+                                networks, a form of AI, to teach a car to drive itself. The car also
+                                connects to other vehicles in order to share data, making object
+                                detection more accurate while also enabling innovative applications
+                                of a multi-vehicle network, such as distributed machine learning which
+                                will result in safer autonomous vehicles since more data and computing power is available.
+                                I specifically worked on the software that connected the vehicles together and to the edge nodes.
+                                <br>
+                                Our research was featured by AutonomouStuff which can be seen <a href="https://autonomoustuff.com/products/case-studies/university-of-north-texas-expanding-cav-capabilities/" target="_blank">here</a>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2019 - May 2020</span></div>
                     </div>
                 </div>
             </section>
@@ -180,41 +202,31 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            Brockman Scholar - Competitive scholarship awarded to only 50 applicants - More information can be found <a href="https://brockmanfoundation.org/brockman-scholars-faqs/" target="_blank">here</a>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
+                            Perfect ACT Score
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                            Perfect Math II SAT Subject Test score
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                            Perfect Chemistry SAT Subject Test Score
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                            TAMS – UNT – President's List award for perfect grade point average of 4.0 in Spring 2019, Fall 2019, and Spring 2020
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
+                            UIL Calculator State Competition Qualifier
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
+                            Won 4th place in Computer Science at the UIL District Championship
                         </li>
                     </ul>
                 </div>
@@ -227,34 +239,63 @@
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="devicon-cplusplus-plain"></i></li>
                         <li class="list-inline-item"><i class="devicon-python-plain"></i></li>
+                        <li class="list-inline-item"><i class="devicon-visualstudio-plain"></i></li>
+                        <li class="list-inline-item"><i class="devicon-windows8-original"></i></li>
                         <li class="list-inline-item"><i class="devicon-java-plain"></i></li>
                         <li class="list-inline-item"><i class="devicon-c-plain"></i></li>
                         <li class="list-inline-item"><i class="devicon-javascript-plain"></i></li>
-                        <li class="list-inline-item"><i class="devicon-visualstudio-plain"></i></li>
-                        <li class="list-inline-item"><i class="devicon-windows8-original"></i></li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3">Proficiency</div>
                     <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
+                        <table>
+                            <tr>
+                              <td style="padding:8px;">C++:</td>
+                              <td style="padding:8px;">Proficient</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">Python:</td>
+                                <td style="padding:8px;">Experienced</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">VisualStudio:</td>
+                                <td style="padding:8px;">Experienced</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">Windows:</td>
+                                <td style="padding:8px;">Experienced</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">Java:</td>
+                                <td style="padding:8px;">Knowledgeable</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">C:</td>
+                                <td style="padding:8px;">Knowledgeable</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">JavaScript:</td>
+                                <td style="padding:8px;">Familiar</td>
+                            </tr>
+                          </table>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
+
+            <!-- Experience-->
+            <section class="resume-section" id="resume">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Resume</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p>
+                                View my resume <a href="./assets/pdf/Jason Hirsch Resume.pdf" target="_blank">here</a>!
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
